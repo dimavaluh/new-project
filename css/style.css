@@ -75,6 +75,7 @@ body, html {
 	width: 153px;
 	height: 109px;
 	margin: auto;
+	padding: 0;
 }
 .header-menu {
 	text-align: center;
@@ -163,7 +164,7 @@ body, html {
 	padding: 30px 0 0;
 }
 .left-side-content {
-	padding: 2px 0 2px 105px;
+	padding: 2px 0;
 	margin: 0;
 	font-size: 12px;
 	font-family: sans-serif; 
@@ -176,7 +177,7 @@ body, html {
 	width: 50%;
 }
 .right-side-content-list {
-	margin: 30px 100px 30px 0;
+	margin: 30px 0;
 	padding: 0;
 	float: right;
 }
@@ -194,7 +195,7 @@ body, html {
 }
 
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 468px) {
 
 	.header {
 		width: 100%;
