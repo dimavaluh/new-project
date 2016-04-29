@@ -68,7 +68,8 @@ body, html {
 }
 .header-section {
 	margin: 15% auto;
-	width: 60%;
+	width: 100%;
+	position: relative;
 }
 .header-logo {
 	display: block;
@@ -93,6 +94,8 @@ body, html {
 	border: 1px solid #fff;
 }
 .header-menu-item:hover {
+	width: 60%;
+	margin: 0 auto;
 	border-top: 1px solid #000000;
 	border-bottom: 1px solid #000000;
 
@@ -146,9 +149,16 @@ body, html {
 	padding: 3px;
 	margin: 0;
 }
-.content-row-block:hover {
-	content: "text";
+.content-row-image:hover {
 	opacity: 0.1;
+}
+.content-row-text {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+
 }
 
 .content-row-image {
@@ -156,6 +166,7 @@ body, html {
 	height: auto;
 	margin: 0;
 	padding: 0;
+	position: relative;
 }
 .footer-left-side {
 	width: 50%;
@@ -193,9 +204,11 @@ body, html {
 .right-side-content-item:hover {
 	border-color: red;
 }
+.toggle-burger {
+	display: none;
+}
 
-
-@media all and (max-width: 468px) {
+@media all and (max-width: 994px) {
 
 	.header {
 		width: 100%;
@@ -203,6 +216,16 @@ body, html {
 		position: relative;
 		top: 0;
 		left: 0;
+	}
+	.main {
+		
+		margin-top: -120px;
+	}
+	.header-section {
+		margin: 5% auto;
+	}
+	.header-menu {
+		display: none;
 	}
 	.left-col {
 		display: none;
@@ -213,4 +236,30 @@ body, html {
 	.right-col-content {
 		margin: 100px 10%;
 	}
+	.toggle-burger {
+		margin: 0 100px;
+		padding: 0;
+		display: block;
+		float: right;
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		border: 1px solid black;
+		position: absolute;
+		top: 0;
+		right: -30px;
+	}
+	.toggle-burger:hover {
+		background: #f0f0f0;
+	}
+	.toggle-burger img {
+		width: 100%;
+		height: 100%;
+	}
+	.footer {
+	
+	}
+}
+@media all and (min-width: 768px) and (max-width: 994px) {
+
 }
