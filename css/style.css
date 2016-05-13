@@ -82,6 +82,8 @@ body, html {
 	text-align: center;
 	list-style: none;
 	padding: 0;
+
+
 }
 .header-menu a {
 	text-decoration: none;
@@ -92,6 +94,7 @@ body, html {
 	padding: 8px 0;
 	color: #000000;
 	border: 1px solid #fff;
+	
 }
 .header-menu-item:hover {
 	width: 60%;
@@ -208,7 +211,7 @@ body, html {
 	display: none;
 }
 
-@media all and (max-width: 994px) {
+@media all and (max-width: 668px) {
 
 	.header {
 		width: 100%;
@@ -260,6 +263,53 @@ body, html {
 	
 	}
 }
-@media all and (min-width: 768px) and (max-width: 994px) {
-
+@media all and (min-width: 668px) and (max-width: 994px) {
+	.toggle-burger {
+	display: none;
+	}
+	.header {
+		width: 100%;
+		height: 200px;
+		position: relative;
+		top: 0;
+		left: 0;
+	}
+	.main {
+		
+		margin-top: -120px;
+	}
+	.header-section {
+		margin: 5% auto;
+	}
+	.header-menu {
+		height: auto;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 70px;
+		display: inline-block;
+		width: 100%;
+	}
+	.header-menu-item {
+		display: block;
+		float: left;
+		padding: 6px;
+		letter-spacing: 2px;
+		width: 16%;
+	}
+	.header-menu-item:hover {
+		width: auto;
+		margin: 0 auto;
+		border-top: 1px solid #000000;
+		border-bottom: 1px solid #000000;
+	}
+	.left-col {
+		display: none;
+	}
+	.right-col {
+		width: 100%;
+	}
+	.right-col-content {
+		margin: 100px 10%;
+	}
+	
 }
